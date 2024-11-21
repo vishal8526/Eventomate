@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Dashboard</title>
+    <link rel="stylesheet" href="get.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Management Dashboard</h1>
+        <form id="eventForm">
+            <div class="form-group">
+                <label for="eventType">Event Type:</label>
+                <input type="text" id="eventType" required>
+            </div>
+            <div class="form-group">
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" required>
+            </div>
+            <div class="form-group">
+                <label for="venue">Venue:</label>
+                <input type="text" id="venue" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">No. of Guests:</label>
+                <input type="number" id="guests" required>
+            </div>
+            <div class="form-group">
+                <label for="budget">Total Expected Budget:</label>
+                <input type="number" id="budget" required>
+            </div>
+            <button type="submit"><a href="dash.html">Submit</a></button>
+        </form>
+
+        <div id="eventSummary" class="summary">
+            <h2>Event Summary</h2>
+            <p id="summaryText"></p>
+        </div>
+    </div>
+    <script src="get.js"></script>
+</body>
+</html>
